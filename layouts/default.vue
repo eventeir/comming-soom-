@@ -9,24 +9,8 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 
-export default {
-  components: {
-    NotifyForm,
-  },
-  data() {
-    return {
-      showModal: false,
-    };
-  },
-  head() {
-    return {
-      title: 'Coming Soon',
-      meta: [{ hid: 'description', name: 'description', content: 'Our website is coming soon!' }],
-    };
-  },
-};
 </script>
 
 <style scoped>
