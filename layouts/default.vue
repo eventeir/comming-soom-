@@ -21,9 +21,9 @@ declare global {
 }
 
 useHead({
-  title: 'ServoCorp',
+  title: 'EventEir',
   meta: [
-    { name: 'description', content: 'A profound web development company' }
+    { name: 'description', content: 'EventEir is your personalized event AI companion' }
   ],
   script: [
     {
