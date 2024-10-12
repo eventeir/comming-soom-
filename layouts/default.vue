@@ -1,25 +1,15 @@
 <template>
-  <div class="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-    <div class="text-center">
-      <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-pulse">Coming Soon</h1>
-      <p class="text-xl md:text-2xl mb-8">Subscribe to our newsletter and get updated as we go!</p>
-      <div class="flex space-x-4">
-        <button @click="showModal = true" class="bg-white text-blue-600 hover:bg-gray-200 transition duration-300 py-2 px-4 rounded-md shadow-lg">
-          Notify Me
-        </button>
-      </div>
+  <div class="flex flex-col items-center justify-center h-screen">
+    <div id="eventeir">
+      █ █ █ <span style="color: black">█ █ █ █ █ █ █ █ █ █ </span>1% <br />&gt; comming soon
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<br />&gt; EventEir
+      <span id="imleç">█</span
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
-    <div class="absolute bottom-10">
-      <p class="text-sm md:text-base">Stay tuned for updates!</p>
-    </div>
-
-    <!-- Modal Component -->
-    <NotifyForm v-if="showModal" @close="showModal = false" />
   </div>
 </template>
 
 <script>
-import NotifyForm from '@/components/NotifyForm.vue';
 
 export default {
   components: {
@@ -33,14 +23,68 @@ export default {
   head() {
     return {
       title: 'Coming Soon',
-      meta: [
-        { hid: 'description', name: 'description', content: 'Our website is coming soon!' },
-      ],
+      meta: [{ hid: 'description', name: 'description', content: 'Our website is coming soon!' }],
     };
   },
 };
 </script>
 
 <style scoped>
-/* You can add additional custom styles here if needed */
+body {
+  background: #000;
+}
+
+#eventeir {
+  color: green;
+  /*color: #8002f5;*/
+  font-family: Monaco, monospace;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  animation: 120ms infinite normal yaziyiSallandir;
+}
+
+span {
+  animation: 1.5s infinite normal imleç;
+}
+
+::-moz-selection {
+  background: #7021d2;
+  color: #fff;
+}
+
+::selection {
+  background: #7021d2;
+  color: #fff;
+}
+
+@keyframes yaziyiSallandir {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40%,
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
+
+@keyframes imleç {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40% {
+    opacity: 0;
+    left: -2px;
+  }
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
 </style>
