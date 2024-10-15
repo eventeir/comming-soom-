@@ -4,7 +4,7 @@
     <div class="jumbo">
       <div class="jumbo-text p-5">
         <h1>Event<span class="corp">Eir</span></h1>
-        <h3 class="py-4">Your personalized event AI companion</h3>
+        <h3 class="py-4">Bringing people together</h3>
         <p>Coming Soon - <span class="corp">{{ new Date().getFullYear() }}</span></p>
       </div>
     </div>
